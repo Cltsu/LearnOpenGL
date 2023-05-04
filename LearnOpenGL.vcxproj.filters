@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\shader">
-      <UniqueIdentifier>{176e8686-6623-4cc9-9368-13f2c1bf3047}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\cpplib\src\glad.c">
@@ -49,14 +46,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="light.fs">
-      <Filter>源文件\shader</Filter>
-    </None>
-    <None Include="light.vs">
-      <Filter>源文件\shader</Filter>
-    </None>
-    <None Include="color.vs" />
-    <None Include="color.fs" />
+    <None Include="normal.vs" />
+    <None Include="normal.fs" />
     <None Include="shader.vs" />
     <None Include="shader.fs" />
     <None Include="model1.bin">

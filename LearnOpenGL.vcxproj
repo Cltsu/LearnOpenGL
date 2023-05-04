@@ -145,10 +145,8 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="color.fs" />
-    <None Include="color.vs" />
-    <None Include="light.fs" />
-    <None Include="light.vs" />
+    <None Include="normal.fs" />
+    <None Include="normal.vs" />
     <None Include="model1.bin" />
     <None Include="shader.fs" />
     <None Include="shader.gs" />
