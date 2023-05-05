@@ -50,33 +50,11 @@
     <None Include="normal.fs" />
     <None Include="shader.vs" />
     <None Include="shader.fs" />
-    <None Include="model1.bin">
-      <Filter>资源文件</Filter>
-    </None>
     <None Include="shader.gs" />
     <None Include="shader1.vs" />
     <None Include="shader1.fs" />
     <None Include="shadowCubeshader.vs" />
     <None Include="shadowCubeshader.fs" />
     <None Include="shadowCubeshader.gs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="container.jpg">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="awesomeface.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="container2.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="container2_specular.png">
-      <Filter>资源文件</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="LearnOpenGL.rc">
-      <Filter>资源文件</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>

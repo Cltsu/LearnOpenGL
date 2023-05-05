@@ -13,10 +13,10 @@ uniform vec3 lightPos;
 uniform vec3 viewPos;
 
 out VS_OUT{
-	vec3 TangentViewPos;
-	vec3 TangentLightPos;
-	vec3 TangentFragPos;
-	vec2 TexCoords;
+    vec2 TexCoords;
+    vec3 TangentLightPos;
+    vec3 TangentViewPos;
+    vec3 TangentFragPos;
 }vs_out;
 
 void main()

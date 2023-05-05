@@ -33,7 +33,8 @@ float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
 unsigned int planeVAO;
-
+GLboolean parallax_mapping = true;
+GLfloat height_scale = 0.1;
 int main()
 {
     // glfw: initialize and configure
@@ -75,12 +76,14 @@ int main()
 
     Shader shader("normal.vs", "normal.fs");
 
-    GLuint diffuseMap = loadTexture("G:/project/c++/LearnOpenGL/resources/textures/brickwall.jpg");
-    GLuint normalMap = loadTexture("G:/project/c++/LearnOpenGL/resources/textures/brickwall_normal.jpg");
+    GLuint diffuseMap = loadTexture("G:/project/c++/LearnOpenGL/resources/textures/bricks2.jpg");
+    GLuint normalMap = loadTexture("G:/project/c++/LearnOpenGL/resources/textures/bricks2_normal.jpg");
+    GLuint depthMap = loadTexture("G:/project/c++/LearnOpenGL/resources/textures/bricks2_disp.jpg");
 
     shader.use();
     glUniform1i(glGetUniformLocation(shader.ID, "diffuseMap"), 0);
     glUniform1i(glGetUniformLocation(shader.ID, "normalMap"), 1);
+    glUniform1i(glGetUniformLocation(shader.ID, "depthMap"), 2);
 
     glm::vec3 lightPos(0.5f, 1.0f, 0.3f);
     // render loop
@@ -109,14 +112,18 @@ int main()
         glUniformMatrix4fv(glGetUniformLocation(shader.ID, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
         //
         glm::mat4 model;
-        model = glm::rotate(model, (GLfloat)glfwGetTime() , glm::normalize(glm::vec3(1.0, 0.0, 1.0))); // Rotates the quad to show normal mapping works in all directions
+        model = glm::rotate(model, (GLfloat)0 , glm::normalize(glm::vec3(1.0, 0.0, 1.0))); // Rotates the quad to show normal mapping works in all directions
         glUniformMatrix4fv(glGetUniformLocation(shader.ID, "model"), 1, GL_FALSE, glm::value_ptr(model));
         glUniform3fv(glGetUniformLocation(shader.ID, "lightPos"), 1, &lightPos[0]);
         glUniform3fv(glGetUniformLocation(shader.ID, "viewPos"), 1, &camera.Position[0]);
+        glUniform1f(glGetUniformLocation(shader.ID, "height_scale"), height_scale);
+        glUniform1i(glGetUniformLocation(shader.ID, "parallax"), parallax_mapping);
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, diffuseMap);
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, normalMap);
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, depthMap);
         RenderQuad();
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
