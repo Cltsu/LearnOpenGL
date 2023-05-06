@@ -50,10 +50,10 @@
     <None Include="final.fs" />
     <None Include="blooming.vs" />
     <None Include="blooming.fs" />
-    <None Include="blur.vs" />
+    <None Include="shadeQuad.vs" />
     <None Include="light_box.fs" />
-    <None Include="shadowCubeshader.vs" />
-    <None Include="blur.fs" />
-    <None Include="shadowCubeshader.gs" />
+    <None Include="shader.vs" />
+    <None Include="shadeQuad.fs" />
+    <None Include="shader.fs" />
   </ItemGroup>
 </Project>
