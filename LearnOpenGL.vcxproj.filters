@@ -46,15 +46,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="normal.vs" />
-    <None Include="normal.fs" />
-    <None Include="shader.vs" />
-    <None Include="shader.fs" />
-    <None Include="shader.gs" />
-    <None Include="shader1.vs" />
-    <None Include="shader1.fs" />
+    <None Include="final.vs" />
+    <None Include="final.fs" />
+    <None Include="blooming.vs" />
+    <None Include="blooming.fs" />
+    <None Include="blur.vs" />
+    <None Include="light_box.fs" />
     <None Include="shadowCubeshader.vs" />
-    <None Include="shadowCubeshader.fs" />
+    <None Include="blur.fs" />
     <None Include="shadowCubeshader.gs" />
   </ItemGroup>
 </Project>
