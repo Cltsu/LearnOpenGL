@@ -145,13 +145,14 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="final.fs" />
-    <None Include="final.vs" />
-    <None Include="blooming.fs" />
-    <None Include="blooming.vs" />
-    <None Include="light_box.fs" />
-    <None Include="shadeQuad.vs" />
-    <None Include="shadeQuad.fs" />
+    <None Include="blur.fs" />
+    <None Include="blur.vs" />
+    <None Include="quad.vs" />
+    <None Include="SSAO.fs" />
+    <None Include="SSAO.vs" />
+    <None Include="quad.fs" />
+    <None Include="light.vs" />
+    <None Include="light.fs" />
     <None Include="shader.fs" />
     <None Include="shader.vs" />
   </ItemGroup>

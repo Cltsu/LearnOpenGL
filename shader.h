@@ -13,6 +13,7 @@ class Shader
 {
 public:
     unsigned int ID;
+    unsigned int Program;
     // constructor generates the shader on the fly
     // ------------------------------------------------------------------------
     Shader(const char* vertexPath, const char* fragmentPath, const char* geometryPath = nullptr)
@@ -83,6 +84,7 @@ public:
         }
         // shader Program
         ID = glCreateProgram();
+        Program = ID;
         glAttachShader(ID, vertex);
         glAttachShader(ID, fragment);
         if (geometryPath != nullptr)
@@ -98,6 +100,10 @@ public:
     }
     // activate the shader
     // ------------------------------------------------------------------------
+    void Use()
+    {
+        glUseProgram(ID);
+    }
     void use()
     {
         glUseProgram(ID);

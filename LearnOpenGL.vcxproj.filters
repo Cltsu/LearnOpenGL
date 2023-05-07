@@ -46,14 +46,15 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="final.vs" />
-    <None Include="final.fs" />
-    <None Include="blooming.vs" />
-    <None Include="blooming.fs" />
-    <None Include="shadeQuad.vs" />
-    <None Include="light_box.fs" />
+    <None Include="blur.vs" />
+    <None Include="blur.fs" />
+    <None Include="SSAO.vs" />
+    <None Include="SSAO.fs" />
+    <None Include="light.vs" />
+    <None Include="quad.fs" />
     <None Include="shader.vs" />
-    <None Include="shadeQuad.fs" />
+    <None Include="light.fs" />
     <None Include="shader.fs" />
+    <None Include="quad.vs" />
   </ItemGroup>
 </Project>
