@@ -145,16 +145,9 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="blur.fs" />
-    <None Include="blur.vs" />
-    <None Include="quad.vs" />
-    <None Include="SSAO.fs" />
-    <None Include="SSAO.vs" />
-    <None Include="quad.fs" />
-    <None Include="light.vs" />
-    <None Include="light.fs" />
-    <None Include="shader.fs" />
-    <None Include="shader.vs" />
+    <None Include="pbr_tex.fs" />
+    <None Include="pbr.fs" />
+    <None Include="pbr.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

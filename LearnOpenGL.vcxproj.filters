@@ -46,15 +46,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="blur.vs" />
-    <None Include="blur.fs" />
-    <None Include="SSAO.vs" />
-    <None Include="SSAO.fs" />
-    <None Include="light.vs" />
-    <None Include="quad.fs" />
-    <None Include="shader.vs" />
-    <None Include="light.fs" />
-    <None Include="shader.fs" />
-    <None Include="quad.vs" />
+    <None Include="pbr.vs" />
+    <None Include="pbr_tex.fs" />
+    <None Include="pbr.fs" />
   </ItemGroup>
 </Project>
