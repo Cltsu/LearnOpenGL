@@ -145,9 +145,19 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="background.fs" />
+    <None Include="background.vs" />
+    <None Include="brdf.vs" />
+    <None Include="brdf.fs" />
+    <None Include="brdf_.fs" />
+    <None Include="cubemap.fs" />
+    <None Include="cubemap.vs" />
+    <None Include="irradiance.fs" />
+    <None Include="pbr1.fs" />
     <None Include="pbr_tex.fs" />
     <None Include="pbr.fs" />
     <None Include="pbr.vs" />
+    <None Include="prefilter.fs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
